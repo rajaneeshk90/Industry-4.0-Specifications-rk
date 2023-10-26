@@ -121,12 +121,6 @@
                     },
                     {
                       "descriptor": {
-                        "name": "product-material-type"
-                      },
-                      "value": "HDPE-Plastic"
-                    },
-                    {
-                      "descriptor": {
                         "name": "product-hardness-type"
                       },
                       "value": "medium"
@@ -194,12 +188,6 @@
                         "name": "product-material-type"
                       },
                       "value": "PVC-Plastic"
-                    },
-                    {
-                      "descriptor": {
-                        "name": "product-hardness-type"
-                      },
-                      "value": "medium"
                     }
                   ]
                 },

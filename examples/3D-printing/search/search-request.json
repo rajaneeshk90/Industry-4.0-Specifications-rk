@@ -20,23 +20,7 @@
         "category": {
           "descriptor": {
             "code": "3d-printing"
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "material-info",
-                "name": "Material Information"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "name": "product-material-type"
-                  },
-                  "value": "PVC-Plastic"
-                }
-              ]
-            }
-          ]
+          }
         }
       }
     }

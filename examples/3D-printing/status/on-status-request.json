@@ -96,8 +96,8 @@
           "id": "f1",
           "state": {
             "descriptor": {
-              "code": "ITEM-PRINTING",
-              "short_desc": "The item is in line for printing"
+              "code": "PRINTER-SETUP",
+              "short_desc": "Setting up the printer for printing"
             },
             "updated_at": "2023-05-25T05:23:04.443Z"
           },
