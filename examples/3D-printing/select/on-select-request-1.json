@@ -60,24 +60,68 @@
                     "name": "product-material-type"
                   },
                   "value": "PVC-Plastic"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "technology-info",
+                "name": "Technology Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "printing-technology-type"
+                  },
+                  "value": "FDM"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "specialisation-info",
+                "name": "Specialisation Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "specialisation-type"
+                  },
+                  "value": "rapid-prototyping"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "scale-info",
+                "name": "Scale Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "scale-type"
+                  },
+                  "value": "industrial"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "printer-info",
+                "name": "Printer Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "Resolution"
+                  },
+                  "value": "gte>20%"
                 },
                 {
                   "descriptor": {
-                    "name": "product-material-type"
+                    "name": "success-rate"
                   },
-                  "value": "HDPE-Plastic"
-                },
-                {
-                  "descriptor": {
-                    "name": "product-hardness-type"
-                  },
-                  "value": "medium"
-                },
-                {
-                  "descriptor": {
-                    "name": "product-hardness-type"
-                  },
-                  "value": "hard"
+                  "value": "gte>95%"
                 }
               ]
             },

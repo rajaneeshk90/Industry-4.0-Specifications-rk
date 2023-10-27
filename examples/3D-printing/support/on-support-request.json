@@ -19,10 +19,10 @@
   },
   "message": {
     "support": {
-      "ref_id": "04389d8c-6a50-4664-9c08-4ee45fef44e8",
-      "phone": "180010801802",
-      "email": "customer.care@merkspace.com",
-      "url": "https://merkspace.de/helpdesk"
+      "ref_id": "d4975df5-b18c-4772-80ad-368669856d52",
+      "callback_phone": "+91 9988776543",
+      "phone": "+91 9988776543",
+      "email": "abcd.makerspace@support.com"
     }
   }
 }

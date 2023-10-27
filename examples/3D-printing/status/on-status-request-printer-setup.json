@@ -6,14 +6,14 @@
         "code": "DE"
       }
     },
-    "action": "on_update",
+    "action": "on_status",
     "version": "1.0.0",
     "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
     "bap_id": "supply-chain-protocol.becknprotocol.io",
     "bpp_id": "bpp.supply-chain.makerspace.io",
     "bpp_uri": "https://bpp.supply-chain.makerspace.io",
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-    "message_id": "d03e57ed-8bb9-4a70-9a8e-9e47f39710d8",
+    "message_id": "1d4a7fa4-3301-4d8a-8146-5ab5fd35db99",
     "timestamp": "2023-05-25T05:23:04.443Z",
     "ttl": "P30M"
   },
@@ -152,14 +152,15 @@
           "id": "f1",
           "state": {
             "descriptor": {
-              "code": "ORDER_ACCEPTED",
-              "short_desc": "Order has been confirmed..."
-            }
+              "code": "PRINTER-SETUP",
+              "short_desc": "Setting up the printer for printing"
+            },
+            "updated_at": "2023-05-25T05:23:04.443Z"
           },
           "customer": {
             "contact": {
               "email": "fox.judie@abc.org",
-              "phone": "+91-81347776660"
+              "phone": "+91-9999999999"
             },
             "person": {
               "name": "Judie Fox"
@@ -251,3 +252,4 @@
     }
   }
 }
+

@@ -75,7 +75,7 @@
                   "descriptor": {
                     "name": "specialisation-type"
                   },
-                  "value": "education-and-research"
+                  "value": "rapid-prototyping"
                 }
               ]
             },
@@ -89,21 +89,7 @@
                   "descriptor": {
                     "name": "scale-type"
                   },
-                  "value": "desktop"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "infill-info",
-                "name": "Infill Information"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "name": "infill-percent"
-                  },
-                  "value": "20"
+                  "value": "industrial"
                 }
               ]
             },
@@ -115,9 +101,15 @@
               "list": [
                 {
                   "descriptor": {
-                    "name": "printer-quality"
+                    "name": "Resolution"
                   },
-                  "value": "medium"
+                  "value": "gte>20%"
+                },
+                {
+                  "descriptor": {
+                    "name": "success-rate"
+                  },
+                  "value": "gte>95%"
                 }
               ]
             }

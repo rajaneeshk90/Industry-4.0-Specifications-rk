@@ -1062,16 +1062,18 @@ components:
         code:
           type: string
           enum:
-            - Design and Modeling
-            - Slicing
-            - Printer Setup
-            - Support Structures
-            - Printing
-            - Post-Processing
-            - Quality Control
-            - Testing and Evaluation
-            - Item Dispatched
-            - Delivered
+            - ORDER_ACCEPTED
+            - DESIGN_AND_MODELING
+            - SLICING
+            - PRINTER_SETUP
+            - SUPPORT_STRUCTURES
+            - PRINTING
+            - POST_PROCESSING
+            - QUALITY_CONTROL
+            - TESTING_AND_EVALUATION
+            - ITEM_DISPATCHED
+            - ITEM_DELIVERED
+            - ORDER_CANCELLED
         short_desc:
           type: string
         long_desc:

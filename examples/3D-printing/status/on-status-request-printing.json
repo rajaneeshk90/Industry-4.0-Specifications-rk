@@ -61,12 +61,68 @@
                     "name": "product-material-type"
                   },
                   "value": "PVC-Plastic"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "technology-info",
+                "name": "Technology Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "printing-technology-type"
+                  },
+                  "value": "FDM"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "specialisation-info",
+                "name": "Specialisation Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "specialisation-type"
+                  },
+                  "value": "rapid-prototyping"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "scale-info",
+                "name": "Scale Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "scale-type"
+                  },
+                  "value": "industrial"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "printer-info",
+                "name": "Printer Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "Resolution"
+                  },
+                  "value": "gte>20%"
                 },
                 {
                   "descriptor": {
-                    "name": "product-hardness-type"
+                    "name": "success-rate"
                   },
-                  "value": "medium"
+                  "value": "gte>95%"
                 }
               ]
             },
@@ -96,10 +152,10 @@
           "id": "f1",
           "state": {
             "descriptor": {
-              "code": "PRINTER-SETUP",
-              "short_desc": "Setting up the printer for printing"
+              "code": "PRINTING",
+              "short_desc": "Items are getting printed..."
             },
-            "updated_at": "2023-05-25T05:23:04.443Z"
+            "updated_at": "2023-05-26T05:03:04.443Z"
           },
           "customer": {
             "contact": {
