@@ -48,6 +48,70 @@
             "category_ids": [
               "p2c3"
             ],
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "product-info",
+                  "name": "Product Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "product-type"
+                    },
+                    "value": "electronics"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "assembly-info",
+                  "name": "Assembly Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "assembly-method"
+                    },
+                    "value": "automated"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "scale-info",
+                  "name": "Scale Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "scale-type"
+                    },
+                    "value": "industrial"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "printer-info",
+                  "name": "Printer Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "Resolution"
+                    },
+                    "value": "gte>20%"
+                  },
+                  {
+                    "descriptor": {
+                      "name": "success-rate"
+                    },
+                    "value": "gte>95%"
+                  }
+                ]
+              }
+            ],
             "price": {
               "currency": "EUR",
               "value": "starting from 50 EUR"
