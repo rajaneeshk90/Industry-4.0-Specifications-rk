@@ -7,7 +7,7 @@
       }
     },
     "action": "on_rating",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
     "bap_id": "supply-chain-protocol.becknprotocol.io",
     "bpp_id": "bpp.supply-chain.makerspace.io",

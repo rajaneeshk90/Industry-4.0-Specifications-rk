@@ -10,7 +10,7 @@
       "message_id": "13abc9ad-3d5e-4f68-83cb-d85f96b81cd5",
       "action": "select",
       "timestamp": "2023-05-25T05:23:03.443Z",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
       "bap_id": "supply-chain-protocol.becknprotocol.io",
       "ttl": "PT10M",
