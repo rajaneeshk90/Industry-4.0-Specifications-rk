@@ -1,6 +1,6 @@
 {
   "context": {
-    "domain": "supply-chain-services:0.1.0",
+    "domain": "supply-chain-services:assembly",
     "location": {
       "country": {
         "code": "DE"
