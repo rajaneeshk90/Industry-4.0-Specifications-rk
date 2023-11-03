@@ -145,26 +145,6 @@
                       "value": "industrial"
                     }
                   ]
-                },
-                {
-                  "descriptor": {
-                    "code": "printer-info",
-                    "name": "Printer Information"
-                  },
-                  "list": [
-                    {
-                      "descriptor": {
-                        "name": "Resolution"
-                      },
-                      "value": "gte>20%"
-                    },
-                    {
-                      "descriptor": {
-                        "name": "success-rate"
-                      },
-                      "value": "gte>95%"
-                    }
-                  ]
                 }
               ],
               "price": {
