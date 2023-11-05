@@ -1,8 +1,9 @@
 
 # Terminologies
 
+Below is a glossary of terms frequently used in the DSEP ecosystem. These terms have been chosen specifically around four specific activities that are performed during discovery namely
 
-
+## Glossary of the tersm used
 
 | Name                    | Meaning                                                                                                                | Type    | Examples                                                                                   |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
