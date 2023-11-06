@@ -30,12 +30,12 @@ The following recommendations need to be considered when implementing discovery 
 
 
 ### Example
-A search request for a course  may look like this
+A search request for a 3d printing service  may look like this
 ```
 
 ```
 
-An example catalog of courses may look like this
+An example catalog of a 3d printing service may look like this
 ```
 
 ```
