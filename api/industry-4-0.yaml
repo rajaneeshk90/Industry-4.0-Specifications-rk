@@ -1053,50 +1053,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Image'
-    StateDescriptor:
-      description: Description of a fulfillment state.
-      type: object
-      properties:
-        name:
-          type: string
-        code:
-          type: string
-          enum:
-            - ORDER_ACCEPTED
-            - DESIGN_AND_MODELING
-            - SLICING
-            - PRINTER_SETUP
-            - SUPPORT_STRUCTURES
-            - PRINTING
-            - POST_PROCESSING
-            - QUALITY_CONTROL
-            - TESTING_AND_EVALUATION
-            - ITEM_DISPATCHED
-            - ITEM_DELIVERED
-            - ORDER_CANCELLED
-        short_desc:
-          type: string
-        long_desc:
-          type: string
-        additional_desc:
-          type: object
-          properties:
-            url:
-              type: string
-            content_type:
-              type: string
-              enum:
-                - text/plain
-                - text/html
-                - application/json
-        media:
-          type: array
-          items:
-            $ref: '#/components/schemas/MediaFile'
-        images:
-          type: array
-          items:
-            $ref: '#/components/schemas/Image'
     Domain:
       description: 'Described the industry sector or sub-sector. The network policy should contain codes for all the industry sectors supported by the network. Domains can be created in varying levels of granularity. The granularity of a domain can be decided by the participants of the network. Too broad domains will result in irrelevant search broadcast calls to BPPs that don''t have services supporting the domain. Too narrow domains will result in a large number of registry entries for each BPP. It is recommended that network facilitators actively collaborate with various working groups and network participants to carefully choose domain codes keeping in mind relevance, performance, and opportunity cost. It is recommended that networks choose broad domains like mobility, logistics, healthcare etc, and progressively granularize them as and when the number of network participants for each domain grows large.'
       type: object
@@ -1214,7 +1170,7 @@ components:
       type: object
       properties:
         descriptor:
-          $ref: '#/components/schemas/StateDescriptor'
+          $ref: '#/components/schemas/Descriptor'
         updated_at:
           type: string
           format: date-time
