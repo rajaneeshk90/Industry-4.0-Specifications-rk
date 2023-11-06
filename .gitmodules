@@ -1,0 +1,3 @@
+[submodule "api/protocol-specifications"]
+	path = api/protocol-specifications
+	url = https://github.com/beckn/protocol-specifications
