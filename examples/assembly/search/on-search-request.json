@@ -87,6 +87,17 @@
               "type": "Self-Pickup"
             }
           ],
+          "locations": [
+            {
+                "id": "location/hof",
+                "city": {
+                    "code": 95028,
+                    "name": "HOF"
+                },
+                "gps": "50.311674, 11.903358"
+            }
+          ],
+          "rating": "3.7",
           "items": [
             {
               "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
@@ -101,6 +112,9 @@
               },
               "category_ids" : [
                 "c3"
+              ],
+              "location_ids": [
+                "location/hof"
               ],
               "fulfillment_ids": ["f1"],
               "tags": [
