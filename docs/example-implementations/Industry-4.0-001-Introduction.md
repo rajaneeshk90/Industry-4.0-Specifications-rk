@@ -83,5 +83,5 @@ Beckn protocol defines a domain-agnostic specification that can be used to repre
 
 The authors would like to thank the following people for their support and contributions to this document. 
 
-[TODO : Add Industry-4.0 WG Members here]
+Industry-4.0 WG Members
 * Ravi Prakash

@@ -1,6 +1,8 @@
-# Introduction to Industry-4.0
+# 3D printing service on Industry-4.0
 #### Industry-4.0 WG -  Working Draft - Nov 10, 2023
 
+## Document Details
+### Protocol Draft
 
 ## Document Details
 ### This version
@@ -37,51 +39,369 @@ PRs: TODO
 ### Errata
 No Errata exists as of now
 
-## Purpose of this document
+## Context
 
 [TODO]
 
-## Overview
-Beckn protocol defines a domain-agnostic specification that can be used to represent any customer- provider transaction by implementing a standard set of APIs and schema. Creating a transaction ideally involves the customer discovering products and services offered by various providers, selecting the desired products or services, obtaining the terms of service, and then finally confirming the order.
-
-[TODO Add content from Intro Section]
-
-## The Need for Open Networks for Industry-4.0
+## Problem
 
 [TODO]
 
-## Industry-4.0
+## Solution
 
-[TODO]
+### Recommendations for BPPs
 
-### Actors
+#### Example 3D printing catalog
+```
+{
+  "context": {
+    "domain": "supply-chain-services:3d-printing",
+    "location": {
+      "country": {
+        "code": "DE"
+      }
+    },
+    "version": "1.1.0",
+    "action": "on_search",
+    "bap_id": "supply-chain-protocol.becknprotocol.io",
+    "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "ttl": "PT30M",
+    "timestamp": "2023-05-25T05:23:03.443Z",
+    "bpp_id": "bpp.supply-chain.makerspace.io",
+    "bpp_uri": "https://bpp.supply-chain.makerspace.io"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "Makerspace"
+      },
+      "providers": [
+        {
+          "id": "1",
+          "descriptor": {
+            "images": [
+              {
+                "url": "makerspace_logo.png",
+                "size_type": "sm"
+              }
+            ],
+            "name": "Makerspace",
+            "short_desc": "Makerspace",
+            "long_desc": "Makerspace, Hof."
+          },
+          "categories": [
+            {
+              "id": "p1",
+              "descriptor": {
+                "code": "3d-printing",
+                "name": "3D printing"
+              }
+            },
+            {
+              "id": "p1c1",
+              "parent_category_id": "p1",
+              "descriptor": {
+                "code": "Stereolithography",
+                "name": "Stereolithography"
+              }
+            },
+            {
+              "id": "p1c2",
+              "parent_category_id": "p1",
+              "descriptor": {
+                "code": "Selective-Laser-Sintering",
+                "name": "Selective-Laser-Sintering"
+              }
+            },
+            {
+              "id": "p1c3",
+              "parent_category_id": "p1",
+              "descriptor": {
+                "code": "Digital-Light-Process",
+                "name": "Digital Light Process"
+              }
+            },
+            {
+              "id": "p1c4",
+              "parent_category_id": "p1",
+              "descriptor": {
+                "code": "Fused-Deposition-Modeling",
+                "name": "Fused-Deposition-Modeling"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "f1",
+              "type": "Delivery"
+            },
+            {
+              "id": "f2",
+              "type": "Self-Pickup"
+            }
+          ],
+          "items": [
+            {
+              "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+              "descriptor": {
+                "images": [
+                  {
+                    "url": "https://makerspace/3d/SLAtype.img",
+                    "size_type": "sm"
+                  }
+                ],
+                "name": "SLA 3D Printing"
+              },
+              "category_ids": [
+                "p1c1"
+              ],
+              "fulfillment_ids": [
+                "f1",
+                "f2"
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "material-info",
+                    "name": "Material Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "product-material-type"
+                      },
+                      "value": "PVC-Plastic"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "technology-info",
+                    "name": "Technology Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "printing-technology-type"
+                      },
+                      "value": "FDM"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "specialisation-info",
+                    "name": "Specialisation Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "specialisation-type"
+                      },
+                      "value": "rapid-prototyping"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "scale-info",
+                    "name": "Scale Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "scale-type"
+                      },
+                      "value": "industrial"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "printer-info",
+                    "name": "Printer Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "Resolution"
+                      },
+                      "value": "gte>20%"
+                    },
+                    {
+                      "descriptor": {
+                        "name": "success-rate"
+                      },
+                      "value": "gte>95%"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "color-info",
+                    "name": "Color Info"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "color"
+                      },
+                      "value": "Red"
+                    },
+                    {
+                      "descriptor": {
+                        "name": "color"
+                      },
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ],
+              "price": {
+                "currency": "EUR",
+                "value": "starting from 200 EUR"
+              }
+            },
+            {
+              "id": "0f3e9527-5929-403a-8c10-9386f910ef83",
+              "descriptor": {
+                "images": [
+                  {
+                    "url": "https://makerspace/3d/sls.img",
+                    "size_type": "sm"
+                  }
+                ],
+                "name": "SLS 3D printing"
+              },
+              "category_ids": [
+                "c2"
+              ],
+              "fulfillment_ids": [
+                "f1"
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "material-info",
+                    "name": "Material Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "product-material-type"
+                      },
+                      "value": "PVC-Plastic"
+                    },
+                    {
+                      "descriptor": {
+                        "name": "product-material-type"
+                      },
+                      "value": "PLA"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "technology-info",
+                    "name": "Technology Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "printing-technology-type"
+                      },
+                      "value": "FDM"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "specialisation-info",
+                    "name": "Specialisation Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "specialisation-type"
+                      },
+                      "value": "rapid-prototyping"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "scale-info",
+                    "name": "Scale Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "scale-type"
+                      },
+                      "value": "industrial"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "printer-info",
+                    "name": "Printer Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "Resolution"
+                      },
+                      "value": "gte>20%"
+                    },
+                    {
+                      "descriptor": {
+                        "name": "success-rate"
+                      },
+                      "value": "gte>95%"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "color-info",
+                    "name": "Color Info"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "color"
+                      },
+                      "value": "Red"
+                    },
+                    {
+                      "descriptor": {
+                        "name": "color"
+                      },
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ],
+              "price": {
+                "currency": "EUR",
+                "value": "starting from 200 EUR"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```
 
-[TODO]
-
-### Entities
-
-[TODO]
-
-### Actions
-
-[TODO]
-
-## Implementing Industry-4.0
-
-[TODO]
-
-## The Industry-4.0 Working Group
-
-[TODO]
-
-## Contributing to Industry-4.0
-
-[TODO]
-
+### Recommendations for BAPs
 
 ## Acknowledgements
 
 The authors would like to thank the following people for their support and contributions to this document. 
 
-[TODO : Add Industry-4.0 WG Members here]
 * Ravi Prakash

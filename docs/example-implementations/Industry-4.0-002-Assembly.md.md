@@ -1,6 +1,8 @@
-# Introduction to Industry-4.0
+# Assembly service on Industry-4.0
 #### Industry-4.0 WG -  Working Draft - Nov 10, 2023
 
+## Document Details
+### Protocol Draft
 
 ## Document Details
 ### This version
@@ -37,51 +39,200 @@ PRs: TODO
 ### Errata
 No Errata exists as of now
 
-## Purpose of this document
+## Context
 
 [TODO]
 
-## Overview
-Beckn protocol defines a domain-agnostic specification that can be used to represent any customer- provider transaction by implementing a standard set of APIs and schema. Creating a transaction ideally involves the customer discovering products and services offered by various providers, selecting the desired products or services, obtaining the terms of service, and then finally confirming the order.
-
-[TODO Add content from Intro Section]
-
-## The Need for Open Networks for Industry-4.0
+## Problem
 
 [TODO]
 
-## Industry-4.0
+## Solution
 
-[TODO]
+### Recommendations for BPPs
 
-### Actors
+#### Example Assembly catalog
+```
+{
+  "context": {
+    "domain": "supply-chain-services:assembly",
+    "location": {
+      "country": {
+        "code": "DE"
+      }
+    },
+    "version": "1.1.0",
+    "action": "on_search",
+    "bap_id": "supply-chain-protocol.becknprotocol.io",
+    "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "ttl": "PT30M",
+    "timestamp": "2023-05-25T05:23:03.443Z",
+    "bpp_id": "bpp.supply-chain.makerspace.io",
+    "bpp_uri": "https://bpp.supply-chain.makerspace.io"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "Makerspace"
+      },
+      "providers": [
+        {
+          "id": "1",
+          "descriptor": {
+            "images": [
+              {
+                "url": "makerspace_logo.png",
+                "size_type": "sm"
+              }
+            ],
+            "name": "Makerspace",
+            "short_desc": "Makerspace",
+            "long_desc": "Makerspace, Hof."
+          },
+          "categories": [
+            {
+              "id": "p2",
+              "descriptor": {
+                "code": "assembly",
+                "name": "Assembly"
+              }
+            },
+            {
+              "id": "p2c1",
+              "parent_category_id": "p2",
+              "descriptor": {
+                "code": "classic",
+                "name": "Classic"
+              }
+            },
+            {
+              "id": "p2c2",
+              "parent_category_id": "p2",
+              "descriptor": {
+                "code": "automated",
+                "name": "Automated"
+              }
+            },
+            {
+              "id": "p2c3",
+              "parent_category_id": "p2",
+              "descriptor": {
+                "code": "intermittent",
+                "name": "Intermittent"
+              }
+            },
+            {
+              "id": "p2c4",
+              "parent_category_id": "p2",
+              "descriptor": {
+                "code": "lean",
+                "name": "Lean"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "f1",
+              "type": "Delivery"
+            },
+            {
+              "id": "f2",
+              "type": "Self-Pickup"
+            }
+          ],
+          "locations": [
+            {
+                "id": "location/hof",
+                "city": {
+                    "code": 95028,
+                    "name": "HOF"
+                },
+                "gps": "50.311674, 11.903358"
+            }
+          ],
+          "rating": "3.7",
+          "items": [
+            {
+              "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+              "descriptor": {
+                "images": [
+                  {
+                    "url": "https://makerspace/assembly/intermittent.png",
+                    "size_type": "sm"
+                  }
+                ],
+                "name": "Intermittent assembly type"
+              },
+              "category_ids" : [
+                "c3"
+              ],
+              "location_ids": [
+                "location/hof"
+              ],
+              "fulfillment_ids": ["f1"],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "product-info",
+                    "name": "Product Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "product-type"
+                      },
+                      "value": "electronics"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "assembly-info",
+                    "name": "Assembly Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "assembly-method"
+                      },
+                      "value": "automated"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "scale-info",
+                    "name": "Scale Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "name": "scale-type"
+                      },
+                      "value": "industrial"
+                    }
+                  ]
+                }
+              ],
+              "price": {
+                "currency": "EUR",
+                "value": "starting from 50 EUR"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```
 
-[TODO]
-
-### Entities
-
-[TODO]
-
-### Actions
-
-[TODO]
-
-## Implementing Industry-4.0
-
-[TODO]
-
-## The Industry-4.0 Working Group
-
-[TODO]
-
-## Contributing to Industry-4.0
-
-[TODO]
-
+### Recommendations for BAPs
 
 ## Acknowledgements
 
 The authors would like to thank the following people for their support and contributions to this document. 
 
-[TODO : Add Industry-4.0 WG Members here]
 * Ravi Prakash

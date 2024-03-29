@@ -1,5 +1,5 @@
 
-# Terminologies
+# Terminology
 
 Below is a glossary of terms frequently used in the Industry4.0 ecosystem. These terms have been chosen specifically around four specific activities that are performed during discovery namely
 
