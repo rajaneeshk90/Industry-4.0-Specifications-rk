@@ -81,13 +81,14 @@
           "params": {
             "amount": "250",
             "currency": "EUR",
-            "bank_account_number": "1234002341",
             "bank_code": "INB0004321",
-            "bank_account_name": "Makerspace Assembly Ltd"
+            "bank_account_number": "1234002341",
+            "source_bank_code": "DYF8765447",
+            "source_bank_account_number": "25373894794747",
+            "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
           },
           "status": "PAID",
-          "type": "PRE-ORDER",
-          "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
+          "type": "PRE-ORDER"
         }
       ]
     }
